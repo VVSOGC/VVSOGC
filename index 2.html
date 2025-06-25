@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OmarsAI Chat</title>
+</head>
+<body>
+    <h1>Welcome to OmarsAI</h1>
+    <form method="post">
+        <label for="user_input">You:</label>
+        <input type="text" id="user_input" name="user_input" required>
+        <input type="submit" value="Send">
+    </form>
+    {% if response %}
+        <p><strong>OmarsAI:</strong> {{ response }}</p>
+    {% endif %}
+</body>
+</html>
